@@ -13,15 +13,6 @@
             margin: 0 auto;
             padding: 2px;
         }
-        main {
-            text-align: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        img {
-            width: 500px;
-            height: 250px;
-        }
     </style>
 </head>
 <body>
@@ -34,28 +25,6 @@
     <main>
     <h2>Mario e sua Origem</h2>
     <p>O Mario foi criado em 1981 pelo designer Shigeru Miyamoto para o jogo de fliperama Donkey Kong, nascendo sob o nome de Jumpman e trabalhando como carpinteiro porque a Nintendo não conseguiu os direitos para fazer um jogo do marinheiro Popeye. O seu visual clássico com boné, bigode e macacão colorido foi planejado apenas para driblar as limitações gráficas da época, já que os pixels limitados tornavam impossível desenhar uma boca realista ou animar o movimento dos cabelos durante os pulos. O nome Mario surgiu logo depois como uma homenagem a Mario Segale, o proprietário do galpão alugado pela Nintendo nos Estados Unidos, enquanto a profissão de encanador e o irmão Luigi foram introduzidos em 1983 com o jogo Mario Bros., que se passava nos esgotos de Nova York e consolidou o universo que explodiria globalmente em 1985 com o clássico Super Mario Bros. do Nintendinho.</p>
-    <button>❤️ <span>0</span></button>
     </main>
 </body>
-
-<script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach( function(botao){
-    let curtiu = false;
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
-        console.log("Botão clicado com sucesso!");
-        let text = botao.querySelector("span");
-
-        if (curtiu === false){
-            text.textContent++;
-            curtiu = true;
-        } else {
-            text.textContent--;
-            curtiu = false;
-        }
-    }
-})
-</script>
 </html>
