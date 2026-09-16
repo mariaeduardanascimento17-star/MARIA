@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brasil: Diversidade e História</title>
+    <title>Super Mario</title>
     <style>
         header {
             background-color: #0d5c3a;
@@ -13,22 +13,13 @@
             margin: 0 auto;
             padding: 2px;
         }
-        main {
-            text-align: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        img {
-            width: 500px;
-            height: 250px;
-        }
     </style>
 </head>
 <body>
     <header>
 
-    <h1>MARIOO</h1>
-    <p>Venha conhecer a Origem do Mario Game</p>
+    <h1>MARIOOO</h1>
+    <p>Venha conhecer a Origem do Super Mario Game</p>
     </header>
 
     <main>
@@ -37,25 +28,4 @@
     <button>❤️ <span>0</span></button>
     </main>
 </body>
-
-<script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach( function(botao){
-    let curtiu = false;
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
-        console.log("Botão clicado com sucesso!");
-        let text = botao.querySelector("span");
-
-        if (curtiu === false){
-            text.textContent++;
-            curtiu = true;
-        } else {
-            text.textContent--;
-            curtiu = false;
-        }
-    }
-})
-</script>
 </html>
