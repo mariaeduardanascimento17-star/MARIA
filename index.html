@@ -6,26 +6,69 @@
     <title>Super Mario</title>
     <style>
         header {
-            background-color: #0d5c3a;
-            color: aliceblue;
+            background-color: #e60012;
+            color: #ffffff;
             text-align: center;
+            max-width: 1750px;
+            margin: 0 auto;
+            padding: 3px;
+        }
+        main {
+            display: flex;
             max-width: 1000px;
             margin: 0 auto;
-            padding: 2px;
+        }
+        article {
+            display: flex;
+        }
+        img {
+            width: 495px;
+            height: 250px;
         }
     </style>
 </head>
 <body>
     <header>
-
-    <h1>MARIOOO</h1>
-    <p>Venha conhecer a Origem do Super Mario Game</p>
+        <h1>SUPER MARIO</h1>
+        <p>O encanador mais famoso do mundo dos videogames e a mascote oficial da Nintendo.</p>
     </header>
-
     <main>
-    <h2>Mario e sua Origem</h2>
-    <p>O Mario foi criado em 1981 pelo designer Shigeru Miyamoto para o jogo de fliperama Donkey Kong, nascendo sob o nome de Jumpman e trabalhando como carpinteiro porque a Nintendo não conseguiu os direitos para fazer um jogo do marinheiro Popeye. O seu visual clássico com boné, bigode e macacão colorido foi planejado apenas para driblar as limitações gráficas da época, já que os pixels limitados tornavam impossível desenhar uma boca realista ou animar o movimento dos cabelos durante os pulos. O nome Mario surgiu logo depois como uma homenagem a Mario Segale, o proprietário do galpão alugado pela Nintendo nos Estados Unidos, enquanto a profissão de encanador e o irmão Luigi foram introduzidos em 1983 com o jogo Mario Bros., que se passava nos esgotos de Nova York e consolidou o universo que explodiria globalmente em 1985 com o clássico Super Mario Bros. do Nintendinho.</p>
-    <button>❤️ <span>0</span></button>
+        <article>
+            <div>
+                <h2>Super Mario: História e Sucesso no Reino dos Cogumelos</h2>
+                <p>Criado por Shigeru Miyamoto em 1981, o personagem Mario estreou no jogo Donkey Kong antes de estrelar sua própria franquia. Ao lado de seu irmão Luigi, ele enfrenta desafios e vilões como Bowser para salvar a Princesa Peach no Reino dos Cogumelos. Com décadas de inovação, a franquia revolucionou o gênero de jogos de plataforma e se tornou um dos maiores fenômenos da cultura pop mundial.</p>
+                <button>🍄 <span>0</span></button>
+            </div>
+        </article>
+        
+        <article>
+            <div>
+                <h2>Super Mario: História e Sucesso no Reino dos Cogumelos</h2>
+                <p>Criado por Shigeru Miyamoto em 1981, o personagem Mario estreou no jogo Donkey Kong antes de estrelar sua própria franquia. Ao lado de seu irmão Luigi, ele enfrenta desafios e vilões como Bowser para salvar a Princesa Peach no Reino dos Cogumelos. Com décadas de inovação, a franquia revolucionou o gênero de jogos de plataforma e se tornou um dos maiores fenômenos da cultura pop mundial.</p>
+                <button>🍄 <span>0</span></button>
+            </div>
+        </article>
     </main>
+    <img src="supermario.png" alt="Image Super Mario">
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach( function(botao){
+    let curtiu = false;
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado() {
+        console.log("Botão clicado com sucesso!");
+        let text = botao.querySelector("span");
+
+        if (curtiu === false){
+            text.textContent++;
+            curtiu = true;
+        } else {
+            text.textContent--;
+            curtiu = false;
+        }
+    }
+})
+</script>
 </body>
 </html>
